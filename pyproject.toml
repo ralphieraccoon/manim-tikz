@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "manim-tikz"
+version = "0.1.0"
+description = ""
+authors = ["Ralphie Raccoon <damian.crosby@manchester.ac.uk>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+# manim = ">=0.9.0"
+manim = { git = "https://github.com/ManimCommunity/manim.git", branch = "main" }
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."manim.plugins"]
+"manim_tikz" = "module:object.attr"
