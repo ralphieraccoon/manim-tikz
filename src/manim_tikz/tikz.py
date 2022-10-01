@@ -1,12 +1,12 @@
 from .template import TikzTemplate
 
-from typing import List
+from typing import List, Optional
 from manim.mobject.svg.svg_mobject import SVGMobject
 from manim.utils.tex_file_writing import tex_to_svg_file
 
 
 class Tikz(SVGMobject):
-    """Converts Tikz markup into an SVG object which is then imported into manim.
+    """Converts Tikz markup into an :code:`SVGMobject` for use in manim.
     
     Parameters
     ----------
@@ -15,7 +15,7 @@ class Tikz(SVGMobject):
     packages
         A list of additional packages that are required for the Tikz image, will be included in the latex preamble in the format :code:`\\addpackage{package1,package2,...}`.
     libraries
-        A list of Tikz libraries that are required for the Tikz image, will be included in the latex preamble in the format :code:`\usetikzlibrary{library1,library2,...}`.
+        A list of Tikz libraries that are required for the Tikz image, will be included in the latex preamble in the format :code:`\\usetikzlibrary{library1,library2,...}`.
     tikzset
         Use this to define any custom Tikz styles, among other things (see the Tikz manual for more detail), will be included in the preamble in the format :code:`\\tikzset{command1,command2,...}`.
     preamble
@@ -34,7 +34,7 @@ class Tikz(SVGMobject):
         class ManimTikzExample(Scene):
             def construct(self):
 
-                tikz_example = Tikz(r"\draw[magenta, fill=blue] (0,0) rectangle(1,1);", use_pdf=False)
+                tikz_example = Tikz(r"\draw[magenta, line width=10mm, fill=blue] (0,0) rectangle(1,1);", use_pdf=False)
 
                 self.add(tikz_example)
 
@@ -43,11 +43,11 @@ class Tikz(SVGMobject):
     def __init__(
         self,
         code: str,
-        packages: List[str] = [],
-        libraries: List[str] = [],
-        tikzset: List[str] = [],
-        preamble: str = None,
-        use_pdf=False,
+        packages: Optional[List[str]] = [],
+        libraries: Optional[List[str]] = [],
+        tikzset: Optional[List[str]] = [],
+        preamble: Optional[str] = None,
+        use_pdf: Optional[bool] = False,
         **kwargs,
     ):
         file_name = self.convert(code, packages, libraries, tikzset, preamble, use_pdf)
