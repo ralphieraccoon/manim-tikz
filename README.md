@@ -4,7 +4,7 @@ Converts Tikz markup code into an `SVGMobject` for use in `manim`.
 
 # Installation
 
-We recommend having the latest version of `manim` using the `svgelements` library for SVG rendering, though older versions will probably work. `manim-tikz` ba installed from PyPI using `pip`:
+`manim-tikz` requires `manim` version `0.11.0` and above, which uses the `svgelements` library for SVG rendering, as this changes how SVG images are rendered. `manim-tikz` ba installed from PyPI using `pip`:
 
 ```py
 pip install manim-tikz
