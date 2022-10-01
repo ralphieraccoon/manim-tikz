@@ -6,7 +6,7 @@ authors = ["Ralphie Raccoon <damian.crosby@manchester.ac.uk>"]
 
 [tool.poetry.dependencies]
 python = ">=3.7,<3.11"
-manim = ">=0.11.0"
+manim = ">=0.17.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
