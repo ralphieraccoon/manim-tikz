@@ -48,7 +48,7 @@ class TikzScene(Scene):
         self.add(test_tex)
 ```
 
-![manim-tikz](/media/images/example/TikzScene_ManimCE_v0.16.0.post0.png)
+![manim-tikz](https://github.com/ralphieraccoon/manim-tikz/blob/master/media/images/example/TikzScene_ManimCE_v0.16.0.post0.png?raw=true)
 
 # Animation
 
