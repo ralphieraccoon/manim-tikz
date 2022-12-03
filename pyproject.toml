@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "manim-tikz"
-version = "0.1.1"
+version = "0.1.2"
 description = "Converts Tikz markup code into an SVGMobject for use in manim."
 authors = ["Ralphie Raccoon <damian.crosby@manchester.ac.uk>"]
+readme = "README.md"
 
 [project.urls]
 "Homepage" = "https://github.com/ralphieraccoon/manim-tikz"
