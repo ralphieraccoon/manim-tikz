@@ -4,6 +4,10 @@ version = "0.1.1"
 description = "Converts Tikz markup code into an SVGMobject for use in manim."
 authors = ["Ralphie Raccoon <damian.crosby@manchester.ac.uk>"]
 
+[project.urls]
+"Homepage" = "https://github.com/ralphieraccoon/manim-tikz"
+"Bug Tracker" = "https://github.com/ralphieraccoon/manim-tikz/issues"
+
 [tool.poetry.dependencies]
 python = ">=3.7,<3.11"
 manim = ">=0.17.0"
