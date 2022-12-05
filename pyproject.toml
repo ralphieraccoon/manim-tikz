@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "manim-tikz"
-version = "0.0.1a"
+version = "0.0.1a1"
 description = "Converts Tikz markup code into an SVGMobject for use in manim."
 authors = ["Ralphie Raccoon <damian.crosby@manchester.ac.uk>"]
 homepage = "https://github.com/ralphieraccoon/manim-tikz"
@@ -11,7 +11,7 @@ readme = "README.md"
 "Bug Tracker" = "https://github.com/ralphieraccoon/manim-tikz/issues"
 
 [tool.poetry.dependencies]
-python = ">=3.7,<3.11"
+python = ">=3.8,<3.12"
 manim = ">=0.17.0"
 
 [tool.poetry.dev-dependencies]
