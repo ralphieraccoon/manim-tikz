@@ -18,7 +18,7 @@ To convert Tikz markup code into an `SVGMobject`, import `Tikz` from the `manim-
 
 ```py
 from manim import *
-from manim-tikz import Tikz
+from manim_tikz import Tikz
 ```
 
 Then when constructing a `Scene` in `manim`, define a `Tikz` object like so:
