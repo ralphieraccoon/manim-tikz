@@ -60,9 +60,9 @@ Future implementations of this plugin may try to include animated Tikz images us
 
 ## Line Thickness
 
-At the moment it seems that the default line thickness for TikZ is almost imperceptibly thin when rendered in `manim`. Not sure why this happens, but you may want to consider increasing `line width` in your Tikz images.
+At the moment it seems that the default line thickness for TikZ is almost imperceptibly thin when rendered in `manim`. Not sure why this happens, but you may want to consider increasing `line width` in your Tikz images. Alternatively, rendering with PDF seems to fix this.
 
 ## Fadings, Gradients, Shadows etc.
 
-I haven't yet tested the library using any of these Tikz features, so I don't know how well they will work in `manim`. I'll look at making some tests in the future.
+Since `svgelements` cannot parse any of these features yet, they are not currently supported. Attempts to use them will likely result in an incorrect or empty shape.
 
